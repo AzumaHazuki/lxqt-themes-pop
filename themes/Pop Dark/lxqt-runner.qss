@@ -1,0 +1,134 @@
+/* Panel */
+#panel {
+    color: #cccccc;
+    background: #353535;
+    border: 1px solid #2a2a29;
+}
+
+/* Buttons */
+QToolButton::menu-indicator {
+    image: none;
+}
+
+#closeButton {
+    color: #cccccc;
+    background: transparent;
+    border: 4px solid transparent;
+    border-image: none;
+    qproperty-icon: url(assets/icons/close.svg);
+    qproperty-iconSize: 16px;
+    padding: 3px;
+}
+
+#actionButton {
+    color: #cccccc;
+    background: transparent;
+    border: 4px solid transparent;
+    border-image: none;
+    qproperty-icon: url(assets/icons/menu.svg);
+    qproperty-iconSize: 16px;
+    padding: 3px;
+}
+
+#closeButton:hover, #actionButton:hover {
+    border-image: url(assets/buttons/hover.png);
+}
+
+#closeButton:pressed, #actionButton:pressed {
+    border-image: url(assets/buttons/active.png);
+}
+
+/* Command Box */
+#commandEd {
+    color: #cccccc;
+    background: #3d3d3df;
+    border: 4px solid transparent;
+    border-image: url(assets/boxes/entry.png);
+    selection-color: #3d3d3df;
+    selection-background-color: #6acad8;
+    padding: 2px;
+}
+
+#commandEd:active {
+    border-image: url(assets/boxes/entry-active.png);
+}
+
+/* Search results list */
+#commandList {
+    background: #3d3d3df;
+    color: #cccccc;
+    selection-color: #3d3d3df;
+    selection-background-color: #6acad8;
+    alternate-background-color: #3d3d3df;
+    border: 1px solid #2a2a29;
+}
+
+#commandList::item, #commandList::item:alternate {
+    color: #cccccc;
+    background: #3d3d3df;
+}
+
+#commandList::item:hover, #commandList::item:selected {
+    color: #3d3d3df;
+    background: #6acad8;
+}
+
+/* Menus */
+
+QMenu {
+    color: #cccccc;
+    background: #252525;
+}
+
+QMenu::item {
+    color: #cccccc;
+    background: transparent;
+    border: none;
+    min-width: 130px;
+    min-height: 24px;
+    margin: 0px;
+    padding: 1px 2px;
+}
+
+QMenu::item:selected {
+    color: #cccccc;
+    background: #616161;
+}
+
+QMenu::item:disabled {
+    color: #8b8e8f;
+}
+
+/* Scrollbars */
+
+QScrollBar::add-line:vertical,
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:vertical,
+QScrollBar::sub-line:horizontal {
+    color: transparent;
+    background: transparent;
+    border: none;
+}
+
+QScrollBar:vertical {
+    color: #cccccc;
+    background: #3d3d3d;
+    width: 10px;
+    padding: 4px 2px;
+}
+
+QScrollBar::handle:vertical {
+    color: #cccccc;
+    background: transparent;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-left: 0px solid transparent;
+    border-right: 0px solid transparent;
+    border-image: url(assets/scrollbars/handle.png);
+    min-height: 24px;
+}
+
+QScrollBar::handle:vertical:hover,
+QScrollBar::handle:vertical:pressed {
+    border-image: url(assets/scrollbars/handle-active.png);
+}
