@@ -68,6 +68,7 @@ QMenu,
 #MainMenu ActionView {
     color: #5d5d5d;
     background: #f6f6f6;
+    min-width: 130px;
 }
 
 QMenu::item,
@@ -75,7 +76,6 @@ QMenu::item,
 #MainMenu ActionView::item {
     color: #5d5d5d;
     background: transparent;
-    border: none;
     min-width: 130px;
     min-height: 24px;
     margin: 0px;
@@ -326,7 +326,7 @@ VolumePopup > QPushButton:pressed,
 
 /* Sliders and Scrollbars */
 
-QSlider {
+LXQtPanel QSlider {
     color: #5d5d5d;
     background: transparent;
     border: none;
@@ -335,7 +335,7 @@ QSlider {
     margin: 12px 0px;
 }
 
-QSlider::sub-page {
+LXQtPanel QSlider::sub-page {
     color: #5d5d5d;
     background: #cdcdcd;
     border: 0px solid transparent;
@@ -343,7 +343,7 @@ QSlider::sub-page {
     width: 4px;
 }
 
-QSlider::groove {
+LXQtPanel QSlider::groove {
     color: #5d5d5d;
     background: #63b1bc;
     border: 0px solid transparent;
@@ -351,7 +351,7 @@ QSlider::groove {
     width: 4px;
 }
 
-QSlider::handle {
+LXQtPanel QSlider::handle {
     color: #5d5d5d;
     background: transparent;
     background-image: url(assets/scrollbars/slider.png);
@@ -361,11 +361,11 @@ QSlider::handle {
     margin: -12px;
 }
 
-QSlider::handle:hover {
+LXQtPanel QSlider::handle:hover {
     background-image: url(assets/scrollbars/slider-hover.png);
 }
 
-QSlider::handle:pressed {
+LXQtPanel QSlider::handle:pressed {
     background-image: url(assets/scrollbars/slider-active.png);
 }
 
